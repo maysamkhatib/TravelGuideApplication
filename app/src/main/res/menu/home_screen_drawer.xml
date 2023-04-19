@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item android:title="@string/travel_destinations">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="@string/menu_home" />
+                <item
+                    android:id="@+id/all"
+                    android:icon="@drawable/ic_baseline_location_city_24"
+                    android:title="@string/menu_all" />
+                <item
+                    android:id="@+id/favorite"
+                    android:icon="@drawable/ic_baseline_favorite_24"
+                    android:title="@string/menu_favorite" />
+                <item
+                    android:id="@+id/sorted"
+                    android:icon="@drawable/ic_baseline_sort_24"
+                    android:title="@string/menu_sorted" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_baseline_account_circle_24"
+                    android:title="@string/menu_profile" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:title="@string/menu_logout" />
+            </group>
+        </menu>
+    </item>
+    </group>
+</menu>
